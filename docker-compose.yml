@@ -16,6 +16,11 @@ services:
       - "3307:3306" 
     volumes:
       - mysql-data:/var/lib/mysql
+    healthcheck: 
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pmysecretpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
  
   api:
@@ -27,7 +32,8 @@ services:
     volumes:
       - ./backend/src:/usr/src/app/src 
     depends_on:
-      - db 
+      db:
+        condition: service_healthy
     environment:
       DB_HOST: 'db' 
       DB_USER: 'gustavo'
