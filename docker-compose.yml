@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+ 
+  db:
+    image: mysql:8.0
+    container_name: portfolio-mysql-db
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password 
+    environment:
+      MYSQL_ROOT_PASSWORD: 'mysecretpassword' 
+      MYSQL_DATABASE: 'portfolio_db'
+      MYSQL_USER: 'gustavo'                  
+      MYSQL_PASSWORD: 'gustavopass'            
+    ports:
+      - "3307:3306" 
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+ 
+  api:
+    build: ./backend 
+    container_name: portfolio-api
+    restart: unless-stopped
+    ports:
+      - "3000:3000" 
+    volumes:
+      - ./backend/src:/usr/src/app/src 
+    depends_on:
+      - db 
+    environment:
+      DB_HOST: 'db' 
+      DB_USER: 'gustavo'
+      DB_PASS: 'gustavopass' 
+      DB_NAME: 'portfolio_db'
+
+ 
+  client:
+    build: ./frontend 
+    container_name: portfolio-client
+    restart: unless-stopped
+    ports:
+      - "5173:5173" 
+    volumes:
+      - ./frontend/src:/usr/src/app/src 
+
+volumes:
+  mysql-data: 
