@@ -59,7 +59,8 @@ export function Home() {
         setIsLoading(true);
 
         try {
-            const response = await fetch('http://localhost:3000/api/validate-visitor', {
+            const apiUrl = import.meta.env.VITE_API_URL;
+            const response = await fetch(`${apiUrl}/api/validate-visitor`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

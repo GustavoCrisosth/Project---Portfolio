@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { z, ZodError } from 'zod';
 import sequelize, { testConnection } from './config/database';
-import Visitor from './models/visitor';
+import Visitor from './models/Visitor';
 
 const app = express();
 const port = process.env.PORT || 3000;
