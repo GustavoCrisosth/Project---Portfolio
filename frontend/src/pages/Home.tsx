@@ -43,8 +43,9 @@ const skills = [
 ];
 
 const certificates = [
-    { name: "Certificação Full Stack X", link: "#", emitter: "Emitido por Empresa Y" },
-    { name: "Imersão React Z", link: "#", emitter: "Emitido por Plataforma A" },
+    { name: "Curso Completo de React", link: "#", emitter: "Emitido por Empresa Y" },
+    { name: "Curso completo de Python e Django", link: "#", emitter: "Emitido por Plataforma A" },
+    { name: "Todos os Certificados", link: "https://drive.google.com/drive/folders/1M77oY0nq9SK-IaIdpl4F4H8RxNYPXjan?usp=drive_link" },
 ];
 
 
