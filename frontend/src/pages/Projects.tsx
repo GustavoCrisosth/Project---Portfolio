@@ -1,20 +1,24 @@
 import { Header } from "@/components/layout/Header";
+import { Github } from "lucide-react";
 
 const projectList = [
     {
-        name: "Projeto API de Vendas",
-        description: "API robusta em Node.js com Sequelize para gerenciamento de clientes, produtos e compras.",
-        link: "https://github.com/GustavoCrisosth/projeto-api"
+        name: "Portfólio Pessoal (Este Site!)",
+        description: "Site full-stack com React, Tailwind, shadcn/ui e Node.js para validação e deploy na Vercel/Render.",
+        linkLive: "https://project-portfolio-ruddy-one.vercel.app/",
+        linkRepo: "https://github.com/GustavoCrisosth/portfolio-gustavo-crisosth"
     },
     {
-        name: "Portfólio Pessoal (Este Site!)",
-        description: "Site full-stack com React, Tailwind, shadcn/ui e Node.js para validação de visitantes.",
-        link: "#"
+        name: "Projeto API de Vendas",
+        description: "API robusta em Node.js com Sequelize para gerenciamento de clientes, produtos e compras.",
+        linkLive: null,
+        linkRepo: "https://github.com/GustavoCrisosth/projeto-api"
     },
     {
         name: "Sistema de CRUD Antigo",
         description: "Aplicação PHP e React para um teste prático, demonstrando habilidades full-stack.",
-        link: "https://github.com/GustavoCrisosth/outro-projeto"
+        linkLive: null,
+        linkRepo: "https://github.com/GustavoCrisosth/outro-projeto"
     },
 ];
 
@@ -35,11 +39,13 @@ export function Projects() {
                     {projectList.map((project) => (
                         <div
                             key={project.name}
-                            className="bg-card border rounded-lg p-6 shadow-sm flex flex-col justify-between"
+                            className="bg-card border rounded-lg p-6 shadow-sm flex flex-col"
                         >
-                            <div>
+                            { }
+                            <div className="flex-grow">
+                                { }
                                 <a
-                                    href={project.link}
+                                    href={project.linkLive || project.linkRepo}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-xl font-semibold hover:text-primary transition-colors hover:underline"
@@ -50,14 +56,36 @@ export function Projects() {
                                     {project.description}
                                 </p>
                             </div>
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm text-primary font-medium mt-6 inline-block hover:underline"
-                            >
-                                Ver no GitHub &rarr;
-                            </a>
+
+                            { }
+                            <div className="flex justify-between items-center mt-6">
+                                { }
+                                {project.linkLive ? (
+                                    <a
+                                        href={project.linkLive}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm text-primary font-medium hover:underline"
+                                    >
+                                        Ver projeto no ar &rarr;
+                                    </a>
+                                ) : (
+
+
+                                    <div />
+                                )}
+
+                                { }
+                                <a
+                                    href={project.linkRepo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="Ver código no GitHub"
+                                    className="text-muted-foreground hover:text-primary transition-colors"
+                                >
+                                    <Github size={24} />
+                                </a>
+                            </div>
                         </div>
                     ))}
                 </div>
