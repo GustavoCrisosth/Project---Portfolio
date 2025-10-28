@@ -19,19 +19,27 @@ import {
     Phone,
     Award,
     Code,
-    Star
+    Star,
+    Container,
+    GitCommit,
+    Languages
 } from "lucide-react"
 
 
 const skills = [
     { name: "Node.js", icon: <Code size={20} /> },
     { name: "React", icon: <Code size={20} /> },
+    { name: "JavaScript", icon: <Code size={20} /> },
     { name: "TypeScript", icon: <Code size={20} /> },
     { name: "PHP", icon: <Code size={20} /> },
     { name: "Tailwind CSS", icon: <Code size={20} /> },
     { name: "Sequelize", icon: <Star size={20} /> },
     { name: "MySQL", icon: <Star size={20} /> },
     { name: "Express", icon: <Star size={20} /> },
+    { name: "Docker", icon: <Container size={20} /> },
+    { name: "Git & GitHub", icon: <GitCommit size={20} /> },
+    { name: "Inglês Avançado", icon: <Languages size={20} /> },
+
 ];
 
 const certificates = [
