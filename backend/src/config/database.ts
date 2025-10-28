@@ -1,16 +1,21 @@
 import { Sequelize, Dialect } from 'sequelize';
 
+
 const dbName = process.env.DB_NAME || 'portfolio_db';
 const dbUser = process.env.DB_USER || 'gustavo';
 const dbPass = process.env.DB_PASS || 'gustavopass';
 const dbHost = process.env.DB_HOST || 'localhost';
+
+const dbPort = process.env.DB_PORT ? parseInt(process.env.DB_PORT, 10) : 3306;
 const dbDialect = 'mysql' as Dialect;
+
 
 const useSsl = (dbHost !== 'localhost' && dbHost !== 'db');
 
 const sequelize = new Sequelize(dbName, dbUser, dbPass, {
     host: dbHost,
-    dialect: 'mysql',
+    port: dbPort,
+    dialect: dbDialect,
     dialectOptions: {
 
         ...(useSsl ? {
