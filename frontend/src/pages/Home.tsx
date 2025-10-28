@@ -144,17 +144,24 @@ export function Home() {
                         Olá! Eu sou Gustavo Crisosth Furtado Mendonça,
                         um Engenheiro de Software de 25 anos apaixonado por construir soluções digitais completas e de alta performance.
                     </p>
+
                     <p className="mt-4 text-muted-foreground leading-relaxed">
-                        Como Desenvolvedor Fullstack, meu foco é criar aplicações web modernas. No backend,
-                        minha principal ferramenta é o Node.js com TypeScript, onde projeto e construo APIs RESTful robustas,
-                        integro com bancos de dados (como MySQL e PostgreSQL) usando ORMs como o Sequelize e implemento sistemas de autenticação seguros.
+                        Como Desenvolvedor Fullstack, meu foco é criar aplicações web modernas. No <strong>backend</strong>,
+                        minha principal ferramenta é o <strong>Node.js</strong> com <strong>TypeScript</strong>, onde projeto e construo APIs RESTful robustas,
+                        integro com bancos de dados (como MySQL e PostgreSQL) usando ORMs como o <strong>Sequelize</strong> e implemento sistemas de autenticação seguros.
+                    </p>
 
-                        No frontend, eu transformo essas APIs em experiências de usuário envolventes e responsivas usando React.js.
+                    <p className="mt-4 text-muted-foreground leading-relaxed">
+                        No <strong>frontend</strong>, eu transformo essas APIs em experiências de usuário envolventes e responsivas usando <strong>React.js</strong>.
                         Tenho experiência em criar interfaces limpas e modernas, utilizando ferramentas como Tailwind CSS e shadcn/ui.
+                    </p>
 
-                        Minha formação em Engenharia de Software me deu uma base sólida em arquitetura de sistemas, código limpo e boas práticas.
-                        Além disso, tenho experiência prática em DevOps, utilizando Docker para containerizar aplicações e fazer o deploy em plataformas de nuvem como Render e Vercel.
+                    <p className="mt-4 text-muted-foreground leading-relaxed">
+                        Minha formação em <strong>Engenharia de Software</strong> me deu uma base sólida em arquitetura de sistemas, código limpo e boas práticas.
+                        Além disso, tenho experiência prática em DevOps, utilizando <strong>Docker</strong> para containerizar aplicações e fazer o deploy em plataformas de nuvem como Render e Vercel.
 
+                    </p>
+                    <p className="mt-4 text-muted-foreground leading-relaxed">
                         Estou sempre em busca de novos desafios para aplicar minha criatividade e meu conhecimento técnico,
                         transformando ideias complexas em software funcional e escalável.
                     </p>
