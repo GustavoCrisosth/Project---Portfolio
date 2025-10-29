@@ -6,20 +6,20 @@ const projectList = [
         name: "Portfólio Pessoal (Este Site!)",
         description: "Site full-stack com React, Tailwind, shadcn/ui e Node.js para validação e deploy na Vercel/Render.",
         linkLive: "https://project-portfolio-ruddy-one.vercel.app/",
-        linkRepo: "https://github.com/GustavoCrisosth/portfolio-gustavo-crisosth"
+        linkRepo: "https://github.com/GustavoCrisosth/Project---Portfolio.git"
     },
     {
         name: "Projeto API de Vendas",
         description: "API robusta em Node.js com Sequelize para gerenciamento de clientes, produtos e compras.",
-        linkLive: null,
-        linkRepo: "https://github.com/GustavoCrisosth/projeto-api"
+        linkLive: "https://crud-node-js-type-script.vercel.app/",
+        linkRepo: "https://github.com/GustavoCrisosth/Crud-NodeJS-TypeScript.git"
     },
-    {
+    /*{
         name: "Sistema de CRUD Antigo",
         description: "Aplicação PHP e React para um teste prático, demonstrando habilidades full-stack.",
         linkLive: null,
         linkRepo: "https://github.com/GustavoCrisosth/outro-projeto"
-    },
+    },*/
 ];
 
 export function Projects() {
