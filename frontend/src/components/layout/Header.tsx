@@ -21,7 +21,7 @@ export function Header() {
                         <Github size={24} />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/gustavocrisosth" // Link curto
+                        href="https://www.linkedin.com/in/gustavocrisosth"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="LinkedIn"
