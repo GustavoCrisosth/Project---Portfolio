@@ -31,7 +31,8 @@ const skills = [
     { name: "React", icon: <Code size={20} /> },
     { name: "JavaScript", icon: <Code size={20} /> },
     { name: "TypeScript", icon: <Code size={20} /> },
-    { name: "PHP", icon: <Code size={20} /> },
+    { name: "Python", icon: <Code size={20} /> },
+    { name: "Django", icon: <Code size={20} /> },
     { name: "Tailwind CSS", icon: <Code size={20} /> },
     { name: "Sequelize", icon: <Star size={20} /> },
     { name: "MySQL", icon: <Star size={20} /> },
@@ -43,8 +44,8 @@ const skills = [
 ];
 
 const certificates = [
-    { name: "Curso Completo de React", link: "#", emitter: "Emitido por Empresa Y" },
-    { name: "Curso completo de Python e Django", link: "#", emitter: "Emitido por Plataforma A" },
+    { name: "Curso Completo de React", link: "https://drive.google.com/drive/folders/1T0xCqMp6uZM2FAJdctyEHmDrv0t5agbf?usp=drive_link", emitter: "Emitido por Escola Alura de Tecnologia" },
+    { name: "Curso completo de Python e Django", link: "https://drive.google.com/drive/folders/1hC_q6QGRv_slJxiwjJqBHeLdBhm21y_Z?usp=sharing", emitter: "Emitido por Escola Alura de Tecnologia" },
     { name: "Todos os Certificados", link: "https://drive.google.com/drive/folders/1M77oY0nq9SK-IaIdpl4F4H8RxNYPXjan?usp=drive_link" },
 ];
 
