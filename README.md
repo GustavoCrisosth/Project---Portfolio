@@ -57,7 +57,7 @@ Clone o repositório
 
 Bash
 
-git clone https://github.com/GustavoCrisosth/portfolio-gustavo-crisosth.git
+git clone https://github.com/GustavoCrisosth/Project---Portfolio.git
 cd portfolio-gustavo-crisosth
 Suba os containers: (Este comando irá construir as imagens e iniciar o frontend, o backend e o banco de dados)
 
