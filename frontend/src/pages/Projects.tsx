@@ -17,7 +17,7 @@ const projectList = [
     {
         name: "API de Gestão de Projetos",
         description: "API RESTful em Node.js para gestão de tarefas Kanban (estilo Trello), com autenticação JWT e ORM Sequelize.",
-        linkLive: "https://trello-clone-ui-one.vercel.app/login",
+        linkLive: "trello-clone-ui-one.vercel.app",
         linkRepo: "https://github.com/GustavoCrisosth/Clone-Trello-API.git"
     }
 ];
